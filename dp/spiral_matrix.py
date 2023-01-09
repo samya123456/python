@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         row = len(matrix)
@@ -28,3 +30,7 @@ class Solution:
                 left+=1
             div = (div+1)%4
         return output
+
+sol = Solution()
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+print(sol.spiralOrder(matrix))
